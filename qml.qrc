@@ -2,7 +2,7 @@
     <qresource prefix="/">
         <file>main.qml</file>
         <file>MainForm.ui.qml</file>
-        <file>Banana.qml</file>
+        <file>Game.qml</file>
         <file>shared/BoxBody.qml</file>
         <file>shared/ChainBody.qml</file>
         <file>shared/CircleBody.qml</file>
@@ -16,5 +16,11 @@
         <file>images/wave.png</file>
         <file>TrackPiece.qml</file>
         <file>Cart.qml</file>
+        <file>Tile.qml</file>
+        <file>tracks/NoiseTrack.qml</file>
+        <file>Train.qml</file>
+        <file>Wheel.qml</file>
+        <file>tracks/SineTrack.qml</file>
+        <file>Human.qml</file>
     </qresource>
 </RCC>

@@ -9,13 +9,7 @@ ApplicationWindow {
     width: 1920
     height: 1200
     visible: true
-
-    Flickable {
+    Game {
         anchors.fill: parent
-        contentWidth: 90000
-        contentHeight: 1200
-        Banana {
-
-        }
     }
 }

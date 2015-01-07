@@ -4,18 +4,32 @@ import "shared"
 
 PhysicsItem {
     id: trackPiece
-    property point startVertex: Qt.point(0, 0)
-    property point endVertex: Qt.point(100, 10)
+    property alias vertices: chain.vertices
     clip: false
-    height: 1
-    width: 1
-    x: 100
-    y: 260
-    fixtures: Edge {
-        vertices: [
-            startVertex,
-            endVertex
-        ]
+    anchors.fill: parent
+    fixtures: Chain {
+        id: chain
         friction: 1000
+    }
+
+    onVerticesChanged: {
+        canvas.requestPaint()
+        canvas.update()
+    }
+
+    Canvas {
+        id: canvas
+        anchors.fill: parent
+        onPaint: {
+            var ctx = canvas.getContext("2d")
+            ctx.beginPath();
+
+            ctx.moveTo(0,0);
+            for(var i in vertices) {
+                var vertex = vertices[i]
+                ctx.lineTo(vertex.x, vertex.y)
+            }
+            ctx.stroke()
+        }
     }
 }
