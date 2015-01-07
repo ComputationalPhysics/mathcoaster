@@ -1,5 +1,5 @@
 TEMPLATE = subdirs
 SUBDIRS = box2d game
-CONFIG += ORDERED
+CONFIG += ordered
 
 game.depends = box2d
