@@ -29,8 +29,8 @@ Item {
         Rectangle {
             id: workspace
 
-            width: 2000
-            height: 2000
+            width: 10000
+            height: 10000
 
             World {
                 id: physicsWorld
