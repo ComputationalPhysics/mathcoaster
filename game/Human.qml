@@ -106,8 +106,8 @@ Item {
         bodyA: chest.body
         bodyB: rightArm.body
         enableLimit: true
-        localAnchorA: Qt.point(0,0)
-        localAnchorB: Qt.point(0,0)
+        localAnchorA: Qt.vector2d(0,0)
+        localAnchorB: Qt.vector2d(0,0)
         Component.onCompleted: {
             setLimits(120,90)
         }
@@ -117,8 +117,8 @@ Item {
         bodyA: chest.body
         bodyB: leftArm.body
         enableLimit: true
-        localAnchorA: Qt.point(16,0)
-        localAnchorB: Qt.point(0,4)
+        localAnchorA: Qt.vector2d(16,0)
+        localAnchorB: Qt.vector2d(0,4)
         Component.onCompleted: {
             setLimits(90,60)
         }
@@ -150,8 +150,8 @@ Item {
         bodyA: chest.body
         bodyB: head.body
         enableLimit: true
-        localAnchorA: Qt.point(8,0)
-        localAnchorB: Qt.point(6,12)
+        localAnchorA: Qt.vector2d(8,0)
+        localAnchorB: Qt.vector2d(6,12)
         Component.onCompleted: {
             setLimits(30,-30)
         }

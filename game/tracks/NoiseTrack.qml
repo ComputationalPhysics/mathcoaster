@@ -47,7 +47,7 @@ TrackPiece {
             x = 30 * i
             y = 600 + (x*0.01)*getVal(0.005*x) + 0.1*Math.pow(x, 1.2)
 //            y = 800 - 100*Math.exp(0.0005*x) + 0.3*x
-            verticesNew.push(Qt.point(x, y))
+            verticesNew.push(Qt.vector2d(x, y))
         }
         vertices = verticesNew
     }

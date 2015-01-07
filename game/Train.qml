@@ -51,9 +51,9 @@ Item {
         WheelJoint {
 //            bodyA: cart.box.body
 //            bodyB: cart2.box.body
-            localAnchorA: Qt.point(-5, 8)
-            localAnchorB: Qt.point(55, 8)
-            localAxisA: Qt.point(1,0)
+            localAnchorA: Qt.vector2d(-5, 8)
+            localAnchorB: Qt.vector2d(55, 8)
+            localAxisA: Qt.vector2d(1,0)
             dampingRatio: 2000
             enableMotor: true
             maxMotorTorque: 100
@@ -67,9 +67,9 @@ Item {
         WheelJoint {
 //            bodyA: cart.box.body
 //            bodyB: cart2.box.body
-            localAnchorA: Qt.point(-5, 16)
-            localAnchorB: Qt.point(55, 16)
-            localAxisA: Qt.point(1,0)
+            localAnchorA: Qt.vector2d(-5, 16)
+            localAnchorB: Qt.vector2d(55, 16)
+            localAxisA: Qt.vector2d(1,0)
             dampingRatio: 2000
             enableMotor: true
             maxMotorTorque: 100
@@ -91,9 +91,9 @@ Item {
 //    WheelJoint {
 //        bodyA: cart2.box.body
 //        bodyB: cart3.box.body
-//        localAnchorA: Qt.point(-5, 0)
-//        localAnchorB: Qt.point(55, 0)
-//        localAxisA: Qt.point(1,0)
+//        localAnchorA: Qt.vector2d(-5, 0)
+//        localAnchorB: Qt.vector2d(55, 0)
+//        localAxisA: Qt.vector2d(1,0)
 ////        length: 50
 //    }
 

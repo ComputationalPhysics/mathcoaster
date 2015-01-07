@@ -35,7 +35,7 @@ Item {
             if (dragActive) {
                 Drag.start();
             } else {
-                dropped(Qt.point(tile.x, tile.y))
+                dropped(Qt.vector2d(tile.x, tile.y))
                 Drag.drop();
             }
         }

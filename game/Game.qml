@@ -29,12 +29,12 @@ Item {
         Rectangle {
             id: workspace
 
-            width: 20000
-            height: 20000
+            width: 2000
+            height: 2000
 
             World {
                 id: physicsWorld
-                gravity: Qt.point(0, 10)
+                gravity: Qt.vector2d(0, 10)
                 onStepped: {
                     if(train.firstCart) {
                         if(decelerating) {
@@ -51,7 +51,7 @@ Item {
                                                              train.firstCart.box.body.linearVelocity.y)
                             var linearVelocityNorm = linearVelocity.normalized()
                             var impulse = linearVelocityNorm.times(10)
-                            var impulsePoint = Qt.point(impulse.x, impulse.y)
+                            var impulsePoint = Qt.vector2d(impulse.x, impulse.y)
                             train.firstCart.box.body.applyLinearImpulse(impulsePoint, train.firstCart.box.body.getWorldCenter())
                         }
                         train.motorSpeed = Math.min(Math.max(train.motorSpeed, -2000), 2000)

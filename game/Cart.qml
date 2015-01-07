@@ -164,9 +164,9 @@ Item {
         id: leftWheelJoint
         bodyA: box.body
         bodyB: wheel.body
-        localAnchorA: Qt.point(wheel.width / 2, box.height)
-        localAnchorB: Qt.point(wheel.width / 2, wheel.height / 2)
-        //        localAxisA: Qt.point(0, 1)
+        localAnchorA: Qt.vector2d(wheel.width / 2, box.height)
+        localAnchorB: Qt.vector2d(wheel.width / 2, wheel.height / 2)
+        //        localAxisA: Qt.vector2d(0, 1)
         motorSpeed: 0
         maxMotorTorque: 500
         enableMotor: true
@@ -176,9 +176,9 @@ Item {
         id: rightWheelJoint
         bodyA: box.body
         bodyB: wheel2.body
-        localAnchorA: Qt.point(box.width - wheel.width / 2, box.height)
-        localAnchorB: Qt.point(wheel2.width / 2, wheel2.height / 2)
-        //        localAxisA: Qt.point(0, 1)
+        localAnchorA: Qt.vector2d(box.width - wheel.width / 2, box.height)
+        localAnchorB: Qt.vector2d(wheel2.width / 2, wheel2.height / 2)
+        //        localAxisA: Qt.vector2d(0, 1)
         motorSpeed: leftWheelJoint.motorSpeed
         maxMotorTorque: 500
         enableMotor: leftWheelJoint.enableMotor
